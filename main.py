@@ -1,4 +1,6 @@
-from util import read_excel_file
+from util.read_excel_file import read_csv
 
 if __name__ == "__main__":
-    read_excel_file()
+    read_csv()
+
+
