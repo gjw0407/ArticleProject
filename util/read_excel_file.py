@@ -17,7 +17,7 @@ def read_csv():
         except BaseException as e:
             print("Error Occurred: {}".format(e))
 
-        return df.values.tolist()
+        return df.squeeze().values
 
     else:
         print("File Not Found", target_file_path)
