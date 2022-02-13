@@ -4,6 +4,9 @@ from util.get_articles import NewsStand
 if __name__ == "__main__":
     url = read_csv()
     news = NewsStand()
-    news.get_articles(url)
+    news.checkChanges(url)
+
+
+    #news.get_articles(url)
 
 
