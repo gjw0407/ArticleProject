@@ -1,0 +1,2 @@
+util/__pycache__
+memo.txt
