@@ -1,4 +1,4 @@
-# articleProject Frontend
+# ArticleProject Frontend
 
 ## Vue.js
 ### Example #1
