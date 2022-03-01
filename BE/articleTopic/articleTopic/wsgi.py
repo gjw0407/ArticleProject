@@ -14,12 +14,3 @@ from django.core.wsgi import get_wsgi_application
 os.environ.setdefault('DJANGO_SETTINGS_MODULE', 'articleTopic.settings')
 
 application = get_wsgi_application()
-
-'''
-@background(schedule=60)
-def notify_user():
-    print("Notified")
-
-notify_user(3, datetime.datetime.now() + datetime.timedelta(minutes=2))
-'''
-
