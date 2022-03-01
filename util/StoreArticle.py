@@ -21,7 +21,7 @@ def saveArticle(news):
 
     newsDict = dict()
     for key in rows:
-        newsDict[key] = True
+        newsDict[int(key[0])] = True
 
     for i in range(len(news.titleBox)):
         title = news.titleBox[i]
