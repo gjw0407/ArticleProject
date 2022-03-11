@@ -8,7 +8,7 @@ import time
 timeloop = Timeloop()
 
 
-@timeloop.job(interval=timedelta(seconds=10))
+@timeloop.job(interval=timedelta(seconds=600))
 def sample_job_every_2s():
     url = [read_csv()]
     news = NewsStand()
@@ -21,4 +21,4 @@ def sample_job_every_2s():
 
 timeloop.start()
 while True:
-    time.sleep(10)
+    time.sleep(300)
