@@ -1,7 +1,8 @@
 from django.shortcuts import render
 from django.http import JsonResponse 
 from articleHeatMap.models import Article 
-
+from util.nlp import nlp
+import sqlite3
 import json
 
 def index(request):
@@ -10,16 +11,17 @@ def index(request):
 def keys(request): 
     articleKeywords = Article.objects.all() 
     articleKeywords_list = [] 
-    data = [
-              {
-                "x":'INTC',"y": 1.2
-              },
-              {
-                "x":'INTC',"y": 0.2
-              },{
-                "x":'INTC',"y": -1.2
-              },         
-            ]
+    # data = [
+    #           {
+    #             "x":'INTC',"y": 1.2
+    #           },
+    #           {
+    #             "x":'INTC',"y": 0.2
+    #           },{
+    #             "x":'INTC',"y": -1.2
+    #           },         
+    #         ]
+    data = nlp()
     print(data)
     print("inviews")
     
