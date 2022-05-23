@@ -77,3 +77,4 @@ class NewsStand:
             cnt += 1
         print(self.titleBox)
         print("Extracted", cnt, "Articles")
+        print()

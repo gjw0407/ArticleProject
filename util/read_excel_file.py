@@ -17,7 +17,10 @@ def read_csv():
         except BaseException as e:
             print("Error Occurred: {}".format(e))
 
-        return df.squeeze().values
+        try:
+            return df.squeeze().values
+        except AttributeError:
+            return df.squeeze()
 
     else:
         print("File Not Found", target_file_path)
